@@ -404,23 +404,20 @@ footer>.title{
 
 /* --> ListCategory <-- */
 
-.category{
 
 
 
-}
-
-.category>div{
+.category>a>div{
     border-radius: 20px;
     overflow: hidden;
     height: 200px;
     width: 800px;
-    margin: 6   0px auto;
+    margin: 60px auto;
     padding: 0px;
     cursor: pointer;
     box-shadow: 0px 0px 20px 0.1px black;
 }
-.category>div>img{
+.category>a>div>img{
     border-radius: 20px;
     position: absolute;
     z-index: -10;
@@ -428,7 +425,7 @@ footer>.title{
     height: 200px;  
     object-fit: cover;
 }
-.category>div>div{
+.category>a>div>div{
     border-radius: 20px;
     position: absolute;
     width: 800px;
@@ -438,10 +435,230 @@ footer>.title{
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
 }
 
-.category>div>h1{
+.category>a>div>h1{
     text-align: center;
     margin: 0px;
     padding: 42px 0px;
     font-size: 100px;
     color: white;
+}
+
+/* Ver Productos */
+
+.product{
+    padding: 100px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+
+}
+.product>div{
+max-width: 700px;
+width: 50%;
+padding: 0px 50px;
+box-sizing: border-box;
+
+}
+
+.product>.product__left>img{
+    width: 500px;
+    height: 700px;
+}
+
+.left__imgs{
+    margin: 10px 0px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.left__imgs>img{
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.product__right>h1{
+    margin: 0px;
+
+}
+
+.product__calification{
+    margin: 10px 0px;
+    align-items: center;
+    display: flex;
+}
+.product__calification>p{
+    margin: 0px;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+.prueba{
+    font-variation-settings:'FILL' 1;
+    color: green;
+}
+
+.product__right>.product__price{
+display: flex;
+align-items: center;
+}
+
+.product__right>.product__price>h2{
+    margin: 0px;
+    margin-right: 10px;
+}
+.product__right>.product__price del{
+    font-size: 15px;
+}
+    
+.gray{
+    color: #555;
+}
+
+.product__options>div>p{
+    margin: 10px 0px;
+}
+
+.product__count{
+    margin: 30px 0px;
+    border-radius: 20px;
+    border: 1px solid #111;
+    width: max-content;
+    padding: 3px;
+    overflow: hidden;
+    }
+
+.product__count>*{
+    display: inline-block;
+    margin: 0px 10px;
+    }
+
+.product__category>p{
+    margin: 0px;
+}
+.product__category{
+    margin: 30px 0px 80px 0px;
+}
+
+.product__category>div{
+    display: flex;
+
+}
+.product__category>div>*{
+    margin-right: 10px;
+}
+
+.product__action{
+    display: flex;
+    align-items: center;
+}
+.product__action *{
+    margin-right: 40px;
+}
+
+
+.product__action>button{
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.product__action>button:hover{
+    background-color: #f51;
+}
+
+.more{
+    padding: 0px 20% ;
+    min-height: 400px;
+}
+
+.more__sup{
+    display: flex;
+    justify-content: center;
+}
+
+.more__sup h3{
+    cursor: pointer;
+    margin: 10px 30px;
+    padding: 10px;
+}
+.more__sup>.select{
+    border-bottom: 4px solid #f51;
+}
+
+.ocult{
+    visibility: hidden;
+    height: 0px;
+}
+
+.op2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.op2>p:nth-child(2n){
+    color: rebeccapurple;
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+
+.card__comment>div{
+    display: flex;
+    justify-content: space-between ;
+}
+
+.card__comment>div>.card__comment__date{
+    display: flex;
+}
+.card__comment>div>.card__comment__date>p{
+    display: flex;
+    margin-right: 20px;
+}
+
+.card__comment>p{
+margin: 0px;
+}
+
+.input__comment{
+    margin: 100px 0px;
+}
+
+.input__comment>div{
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+
+.input__comment>textarea{
+    width: 100%;
+    height: 150px !important; 
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    outline: none;
+
+}
+
+.input__comment>div>button{
+    background-color: #111;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+
+.input__comment>div>button:hover{
+    background-color: #f51;
+}
+.input__comment>.input__comment-button{
+    justify-content: flex-end ;
 }
