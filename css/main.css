@@ -18,11 +18,16 @@ ul>li{
 li{
     text-decoration: none;
     list-style: none;
+    cursor: pointer;
 }
 
 a{
+
     text-decoration: none;
     color: #111;
+}
+li:hover{
+    color: #f51;
 }
 
 /* --> First <-- */
@@ -662,3 +667,105 @@ margin: 0px;
 .input__comment>.input__comment-button{
     justify-content: flex-end ;
 }
+
+.cart>.cart__grid{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 40px;
+    align-items: center;
+    text-align: center;
+    row-gap: 40px;
+    
+}
+.cart>.cart__grid>img{
+    width: 80px;
+    height: 100px;
+    object-fit: cover;
+    margin: auto;
+
+
+}
+.cart__count{
+    margin: auto;
+    border-radius: 20px;
+    border: 1px solid #111;
+    height: min-content;
+    width: max-content;
+    padding: 3px;
+    overflow: hidden;
+    }
+
+.cart__count>*{
+    display: inline-block;
+    margin: 0px 10px;
+    }
+
+    .action{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 80px;
+        margin: auto;
+    }
+    .action button{
+        background-color: #111;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        transition-duration: 0.3s;
+        cursor: pointer;
+        margin: 20px 0px;
+    }
+    
+    .action button:hover{
+        background-color: #f51;
+    }
+
+    .caja {
+        margin: 10px 0px;
+        border:1px solid #d9d9d9;
+        height:30px;
+        overflow: hidden;
+        width: 230px;
+        position:relative;
+     }
+     select {
+        background: transparent;
+        border: none;
+        font-size: 14px;
+        height: 30px;
+        padding: 5px;
+        width: 250px;
+     }
+     select:focus{ outline: none;}
+     
+     .caja::after{
+         content:"\025be";
+         display:table-cell;
+         padding-top:7px;
+         text-align:center;
+         width:30px;
+         height:30px;
+         background-color:#d9d9d9;
+         position:absolute;
+         top:0;
+         right:0px;	
+         pointer-events: none;
+     }
+
+     .action>div>input{
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #111;
+        width: 80%;
+        margin: 20px 0px;
+     }
+
+     .action__end>div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+     }
+
+     .action__end>div>h3{
+        color: #f51 ;
+     }
